@@ -4,10 +4,9 @@ body {
 }
 
 .background {
-    display: table;
     text-align: center;
     color: #ffffff;
-    background: url("../img/background-index2.png") no-repeat center center;
+    background: url("../img/background-index2.png") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
