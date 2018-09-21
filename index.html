@@ -9,36 +9,37 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="src/style.css">
   <title>Portafolio 2018</title>
 </head>
 
 <body>
   <!--Navbar section-->
-  <div id="nav">
-    <nav class="navbar navbar-expand-sm">
+  <div class="nav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <img class="logo-danelly" src="img/logo-letra-org.png">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background: #ffffff"></span>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="active">Inicio</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a href="#">Sobre mí</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Acerca de mí</a>
             </li>
             <li class="nav-item">
-              <a href="src/portfolio.html">Portafolio</a>
+              <a class="nav-link js-scroll-trigger" href="#signup">Contacto</a>
             </li>
             <li class="nav-item">
-              <a target="_blank" href="cv/Danelly-CV.pdf">CV</a>
+              <a class="nav-link js-scroll-trigger" target="_blank" href="cv/Danelly-CV.pdf">CV</a>
             </li>
           </ul>
         </div>
@@ -47,51 +48,70 @@
   </div>
   <!--Intro section-->
   <div class="background">
-    <div class="container">
-      <div class="intro">
-        <div class="description">
-          <h1>HOLA, SOY DANELLY.
-            <br> UX DESIGNER Y COMUNICADORA</h1>
+    <!-- Presentation -->
+    <header class="masthead">
+      <div class="container d-flex align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0">HOLA!</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">SOY DANELLY, UX DESIGNER Y COMUNICADORA</h2>
+          <a href="#projects" class="btn btn-primary js-scroll-trigger">Proyectos</a>
         </div>
       </div>
+    </header>
+    <!-- Links section -->
+    <div class="container links-contact">
+      <div class="links">
+        <a href="https://www.behance.net/danellyluc0192" target="_blank">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://dribbble.com/Danelly" target="_blank">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <a href="https://github.com/DanellySotomayor" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/danellysotomayor" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </div>
+  </div>
+  <!--Projects section-->
+  <section id="projects" class="projects-section bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="links">
-            <ul>
-              <li>
-                <a href="https://www.behance.net/danellyluc0192" target="_blank">
-                  <i class="fab fa-behance"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://dribbble.com/Danelly" target="_blank">
-                  <i class="fab fa-dribbble"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/DanellySotomayor" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/danellysotomayor" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/mockup1.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">La América - E-commerce</h4>
+                <p class="mb-0 text-white-50">Ordena tus platillos favoritos desde la comodidad de tu hogar...o pídelo y pasa a recogerlo!</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
-  </div>
+  </section>
   <!--About Me section-->
-  <div class="container-fluid about-me">
-    <div class="contact">
-        <h2>Contáctame</h2>
+  <section id="about" class="about-section text-center">
+    <div class="container-fluid about-me">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Sobre mí</h2>
+          <p class="text-white-50">Soy Danelly Sotomayor, UX Designer con background en Comunicaciones y Diseño Gráfico. Me apasiona la investigación
+            y el diseño, y no tengo miedo de probar nuevas herramientas.
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
   <!--Footer section-->
   <footer class="footer-home">
     <div class="container text-center">

@@ -3,9 +3,14 @@ body {
     position: relative;
 }
  
-.navbar {
-     position: absolute;
-    font-size: 16px;
+.navbar{
+    background: #13131A;
+    color: #ffffff;
+    padding: 10px;
+}
+
+a .logo-danelly {
+    width: 40px;
 }
 
 .background {
@@ -20,29 +25,49 @@ body {
 }
 
 h1 {
-    font-size: 36px;
-    padding: 20% 0 25% 0;
+    padding: 50% 0 0;
+    font-size: 2em;
 }
+
+h2 {
+    padding-bottom: 10%;
+    font-size: 1.5em;
+}
+
 
 ul, ol {
     list-style: none;
-    padding: 2% 0;
 }
 
 li {
     display: inline-block;
-    margin: 0 20px;
+    color: #ffffff;
     font-size: 36px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
     color: #ffffff;
 }
 
-
-.fa {
+.navbar-light .navbar-toggler {
     color: #ffffff;
+    border-color: #ffffff;
+    border-radius: .10rem;
 }
 
-a {
-    color: #ffffff;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(95, 95, 118);
+}
+
+a .fab {
+    color: #ffffff; 
+    margin: 0 15px;
+    font-size: 200%;
+}
+
+.links-contact {
+    padding: 10% 0;
 }
 
 .footer-home {
@@ -56,14 +81,36 @@ a {
     background: #13131A;
     background-size: cover;
     width: 100%;
+    color: #ffffff;
 }
 
+.projects-section {
+    padding: 20% 0;
+}
 
-@media (min-width: 768px) {
-.intro h1 {
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+.bg-black {
+    background-color: #13131A;
+}
+
+@media (min-width: 765px) {
+h1 {
     font-size: 60px;
-    font-weight: 600;
-    padding: 170px 0 210px 0;
+    padding: 30% 0 0;
 }
-
+h2 {
+    padding-bottom: 10%;
+}
+.projects-section {
+    padding: 10% 0;
+}
+.projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+}
 }
