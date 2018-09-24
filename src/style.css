@@ -26,7 +26,7 @@ a .logo-danelly {
 
 h1 {
     padding: 50% 0 0;
-    font-size: 2em;
+    font-size: 2,5em;
 }
 
 h2 {
@@ -77,15 +77,16 @@ a .fab {
     font-size: 13px;
 }
 
-.about-me {
+.contact {
     background: #13131A;
     background-size: cover;
     width: 100%;
     color: #ffffff;
 }
 
-.projects-section {
-    padding: 20% 0;
+h3 {
+    padding: 10% 0 5%;
+    font-size: 2em;
 }
 
 .projects-section .project-text {
@@ -97,20 +98,60 @@ a .fab {
     background-color: #13131A;
 }
 
+.about-section {
+    text-align: center;
+    color: #ffffff;
+    background: url("../img/background-index2.png") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
+
+.scroll-to-top {
+    z-index: 1042;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+}
+
+.scroll-to-top a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(33, 37, 41, 0.5);
+    line-height: 3.1rem;
+}
+
 @media (min-width: 765px) {
 h1 {
-    font-size: 60px;
-    padding: 30% 0 0;
+    font-size: 3em;;
+    padding: 40% 0 0;
 }
 h2 {
     padding-bottom: 10%;
 }
-.projects-section {
-    padding: 10% 0;
+h3 {
+    padding: 5% 0 3%;
+}
+a .fab {
+    color: #ffffff; 
+    margin: 0 15px;
+    font-size: 250%;
 }
 .projects-section .project-text hr {
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10% 20%;
 }
 }
