@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="src/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
   <title>Danelly Sotomayor-Portafolio</title>
 </head>
 
@@ -36,10 +37,13 @@
               <a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" target="_blank" href="cv/Danelly-CV.pdf">CV</a>
+              <a class="nav-link js-scroll-trigger" target="_blank" href="cv/Danelly-CV.pdf">Mi CV</a>
             </li>
           </ul>
         </div>
@@ -47,19 +51,18 @@
     </nav>
   </div>
   <!--Intro section-->
-  <div class="background">
-
+  <div class="background" id="page-top">
     <!-- Presentation -->
     <header>
       <div class="container d-flex align-items-center">
         <div class="row presentation">
           <div class="mx-auto text-center">
-            <h1 class="mx-auto my-0">HOLA!</h1>
+            <h1 class="mx-auto my-0">¡HOLA!</h1>
             <h2 class="text-white-50 mx-auto mt-2">SOY DANELLY SOTOMAYOR, UX/UI DESIGNER Y COMUNICADORA SOCIAL</h2>
             <a href="#projects" class="btn btn-light js-scroll-trigger">Mira mis proyectos</a>
             <div class="lenguaje">
               <a href="src/index-english.html">
-                <p>English</p>
+                <button>English</button>
               </a>
             </div>
           </div>
@@ -87,7 +90,7 @@
   <!--Projects section-->
   <section id="projects" class="projects-section bg-light">
     <div class="container">
-      <h3 class="text-center text-black">PROJECTS</h3>
+      <h3 class="text-center text-black">PROYECTOS</h3>
       <hr class="d-none d-lg-block mb-0 ml-0">
 
       <!-- Project One Row -->
@@ -102,8 +105,11 @@
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">La América - E-commerce</h4>
                 <p class="mb-0 text-white-50">Plataforma de E-commerce para el restaurante La América.
-                    Le permite a sus usuarios pedir un delivery online o reservar para pasar a recogerlo.</p>
-                <a href="https://github.com/DanellySotomayor/lim-2018-01-ux-marketplace" target="_blank" class="btn btn-info js-scroll-trigger">Conoce un poco más</a>
+                  Le permite a sus usuarios pedir un delivery online o reservar para pasar a recogerlo.</p><br>
+                <a href="https://github.com/DanellySotomayor/lim-2018-01-ux-marketplace" target="_blank" class="btn btn-info js-scroll-trigger">Ver
+                  proyecto</a>
+                <a href="https://github.com/DanellySotomayor/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Ver
+                  demo</a>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -122,9 +128,12 @@
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">Registro de Visitas - Comunal</h4>
                 <p class="mb-0 text-white-50">Aplicación para el servicio de coworking Comunal que
-                    permite a los visitantes registrarse de manera sencilla, y a los administradores llevar un
-                    registro más detallado de las visitas diarias.</p>
-                <a href="https://github.com/DanellySotomayor/proyecto-final-common-core" target="_blank" class="btn btn-info js-scroll-trigger">Conoce un poco más</a>
+                  permite a los visitantes registrarse de manera sencilla, y a los administradores llevar un
+                  registro más detallado de las visitas diarias.</p><br>
+                <a href="https://github.com/DanellySotomayor/proyecto-final-common-core" target="_blank" class="btn btn-info js-scroll-trigger">Ver
+                  proyecto</a>
+                <a href="https://github.com/DanellySotomayor/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Ver
+                  demo</a>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -143,8 +152,11 @@
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">Where's my food?</h4>
                 <p class="mb-0 text-white-50">Aplicación que permite buscar restaurantes según tu
-                    ubicación.</p>
-                <a href="https://github.com/DanellySotomayor/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Conoce un poco más</a>
+                  ubicación.</p><br>
+                <a href="https://github.com/DanellySotomayor/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Ver
+                  proyecto</a>
+                <a href="https://github.com/DanellySotomayor/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Ver
+                  demo</a>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -162,9 +174,12 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">U+US - Red Social Feminista</h4>
-                <p class="mb-0 text-white-50">Red social especialmente dedicada a la comunidad feminista que busca crear un espacio para compartir info, y brindar y solicitar apoyo.</p>
+                <p class="mb-0 text-white-50">Red social especialmente dedicada a la comunidad feminista que busca
+                  crear un espacio para compartir info, y brindar y solicitar apoyo.</p><br>
                 <a href="https://github.com/DanellySotomayor/lim-2018-05-bc-core-am-socialnetwork" target="_blank"
-                  class="btn btn-info js-scroll-trigger">Conoce un poco más</a>
+                  class="btn btn-info js-scroll-trigger">Ver proyecto</a>
+                <a href="https://github.com/DanellySotomayor/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Ver
+                  demo</a>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -196,6 +211,42 @@
       </div>
     </div>
   </section>
+  <!--Skills section-->
+  <section id="skills" class="skills-section text-center">
+    <div class="container-fluid about-me">
+      <div class="center">
+        <h3 class="text-center">HABILIDADES</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-Lg-0">
+          <div class="prot">
+            <h4>Prototipado</h4>
+            <a title="Adobe XD" href="#"><img width="64" alt="Adobe XD CC icon" src="img/64px-Adobe_XD_CC_icon.svg.png"></a>
+            <a title="Figma" href="#"><img width="64" alt="Figma icon" src="img/figma-icon.svg"></a>
+            <a title="Marvel" href="#"><img width="64" alt="Marvel icon" src="img/if_Marvel.svg"></a>
+            <a title="Bootstrap" href="#"><img width="64" alt="Bootstrap icon" src="img/bootstrap.svg"></a>
+            <a title="Materialize" href="#"><img width="64" alt="Materialize icon" src="img/materialize-seeklogo.com.svg"></a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mb-Lg-0">
+          <div class="graf">
+            <h4>Diseño gráfico</h4>
+            <a title="Photoshop" href="#"><img width="64" alt="Photoshop CC icon" src="img/icons8-adobe-photoshop.svg"></a>
+            <a title="Illustrator" href="#"><img width="64" alt="Illustrator CC icon" src="img/icons8-adobe-illustrator.svg"></a>
+            <a title="InDesign" href="#"><img width="64" alt="InDesign CC icon" src="img/icons8-adobe-indesign.svg"></a>
+          </div>
+        </div>
+        <div class="col-md-12 mb-5 mb-Lg-0">
+          <div class="maq">
+            <h4>Maquetado</h4>
+            <a title="CSS" href="#"><img width="72" alt="CSS icon" src="img/icons8-css3.svg"></a>
+            <a title="HTML" href="#"><img width="72" alt="HTML icon" src="img/icons8-html-5.svg"></a>
+            <a title="Javascript" href="#"><img width="50" alt="JS icon" src="img/javascript-seeklogo.com.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--Contact section-->
   <section id="contact" class="contact-section text-center">
     <div class="container-fluid contact">
@@ -204,7 +255,7 @@
       </div>
       <div class="row">
         <div class="col-md-6 mb-5 mb-Lg-0">
-          <p class="lead mb-0">E-mail:</p><i class="fas fa-envelope"></i><a href="mailto:danellysotomayor.m@gmail.com"
+          <p class="lead mb-0">Escríbeme a:</p><i class="fas fa-envelope"></i><a href="mailto:danellysotomayor.m@gmail.com"
             target="_blank" class="white email"> danellysotomayor.m@gmail.com</a>
         </div>
         <div class="col-md-6 mb-5 mb-Lg-0">
@@ -230,7 +281,7 @@
   <footer class="footer-home">
     <div class="container text-center">
       <div class="fnav">
-        <p>Copyright &copy; 2018 Danelly Sotomayor</p>
+        <p>Copyright &copy; 2018 Elaborado por Danelly Sotomayor</p>
       </div>
     </div>
   </footer>

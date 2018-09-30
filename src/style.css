@@ -1,22 +1,34 @@
 body {
     margin: 0;
     position: relative;
+    font-family: 'Rosario', sans-serif;
+}
+
+
+a .logo-danelly {
+    width: 35px;
 }
  
 .navbar{
-    background: #13131A;
+    transition: 350ms ease;
+    background: transparent !important;
     color: #ffffff;
     padding: 10px;
 }
 
-a .logo-danelly {
-    width: 40px;
+.navbar.scrolled{
+    background: rgba(9, 22, 39, 0.897) !important;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
 }
 
 .background {
     text-align: center;
     color: #ffffff;
-    background: url("../img/background-index2.png") no-repeat center center fixed;
+    background: linear-gradient(
+        rgba(11, 11, 12, 0.712), 
+        rgba(11, 11, 12, 0.712)
+      ), url("../img/unsplash.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -28,8 +40,22 @@ a .logo-danelly {
     margin: auto;
 }
 
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color:rgb(21, 50, 88);
+    color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+}
+
 h1 {
-    padding: 30% 0 0;
+    padding: 40% 0 0;
     font-size: 2,5em;
 }
 
@@ -57,11 +83,13 @@ li {
 .navbar-light .navbar-toggler {
     color: #ffffff;
     border-color: #ffffff;
-    border-radius: .10rem;
+    border-radius: 0.10rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(98, 98, 136);
+    background-color: rgba(9, 22, 39, 0.897);
+    border-radius: 5px;
+    color: #ffffff;
 }
 
 a .fab {
@@ -82,26 +110,33 @@ a .fas {
 
 .btn{
     margin: 2% 0 5% 0;
-    background-color: rgb(98, 98, 136);
-    border-color: rgb(98, 98, 136);
+    background-color: rgb(21, 50, 88);
+    border-color: rgb(21, 50, 88);
     color: #ffffff;
 }
 
 .btn:hover{
     background-color: rgb(255, 255, 255);
     border-color: rgb(33, 33, 47);
+    border-radius: 15px;
     color: rgb(33, 33, 47);
 }
 
 .footer-home {
-    background: rgb(33, 33, 47);
+    background: linear-gradient(
+        rgba(11, 11, 12, 0.712), 
+        rgba(11, 11, 12, 0.712)
+      ), url("../img/unsplash.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     color: #ffffff;
     padding: 1.5% 0 0.5% 0;
     font-size: 13px;
 }
 
 .contact {
-    background: #13131A;
+    background: rgb(2, 9, 19);
     background-size: cover;
     width: 100%;
     color: #ffffff;
@@ -118,13 +153,16 @@ h3 {
 }
 
 .bg-black {
-    background-color: #13131A;
+    background-color: rgb(2, 9, 19);
 }
 
-.about-section {
+.about-section, .skills-section {
     text-align: center;
     color: #ffffff;
-    background: url("../img/background-index2.png") no-repeat center center fixed;
+    background: linear-gradient(
+        rgba(11, 11, 12, 0.712), 
+        rgba(11, 11, 12, 0.712)
+      ), url("../img/unsplash.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -139,6 +177,7 @@ h3 {
 .perfil {
     max-width: 80%;
     height: auto;
+    margin: 0 0 5% 0;
 }
 
 .email {
@@ -152,7 +191,7 @@ h3 {
 }
 h1 {
     font-size: 3em;;
-    padding: 20% 0 0;
+    padding: 25% 0 0;
 }
 h2 {
     padding-bottom: 8%;
@@ -167,7 +206,7 @@ a .fab {
 }
 
 .projects-section .project-text hr {
-    border-color: rgb(98, 98, 136);
+    border-color: rgba(9, 22, 39, 0.897);
     border-width: .25rem;
     width: 30%;
 }
