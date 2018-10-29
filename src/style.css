@@ -1,7 +1,7 @@
 body {
     margin: 0;
     position: relative;
-    font-family: 'Rosario', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -10,16 +10,17 @@ a .logo-danelly {
 }
  
 .navbar{
-    transition: 350ms ease;
+    transition: 250ms ease;
     background: transparent !important;
     color: #ffffff;
     padding: 10px;
 }
 
 .navbar.scrolled{
-    background: rgba(9, 22, 39, 0.897) !important;
+    background: #05101b !important;
     color: #ffffff;
-    padding: 5px 10px 5px 10px;
+    padding: 10px;
+
 }
 
 .background {
@@ -31,6 +32,7 @@ a .logo-danelly {
       ), url("../img/unsplash.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
     -o-background-size: cover;
     width: 100%;
     height: auto;
@@ -49,7 +51,7 @@ button {
 button:hover {
     background-color:rgb(21, 50, 88);
     color: #ffffff;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     padding: 5px 10px;
 }
@@ -76,8 +78,16 @@ li {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px;
 }
 
 .navbar-light .navbar-toggler {
@@ -87,9 +97,17 @@ li {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    background-color: rgba(9, 22, 39, 0.897);
-    border-radius: 5px;
+    background-color: #4a5c5f;
+    border-radius: 2px;
     color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+	color: #ffffff;
+	background: #61266d
+}
+.navbar-light .navbar-nav .nav-link.active{
+	background: #4a5c5f;
 }
 
 a .fab {
@@ -104,21 +122,26 @@ a .fas {
     font-size: 150%;
 }
 
+.soft {
+    display: inline-block;
+    padding: 20px;
+}
+
 .links-contact {
-    padding: 10% 0 12% 0;
+    padding: 9% 0 12% 0;
 }
 
 .btn{
     margin: 2% 0 5% 0;
-    background-color: rgb(21, 50, 88);
-    border-color: rgb(21, 50, 88);
+    background-color: rgba(21, 50, 88, 0);
+    border-color: rgb(255, 255, 255);
     color: #ffffff;
 }
 
 .btn:hover{
     background-color: rgb(255, 255, 255);
-    border-color: rgb(33, 33, 47);
-    border-radius: 15px;
+    border-color: rgb(44, 44, 73);
+    border-radius: 8px;
     color: rgb(33, 33, 47);
 }
 
@@ -156,7 +179,7 @@ h3 {
     background-color: rgb(2, 9, 19);
 }
 
-.about-section, .skills-section {
+.about-section {
     text-align: center;
     color: #ffffff;
     background: linear-gradient(
@@ -190,11 +213,12 @@ h3 {
     color: #ffffff;
 }
 h1 {
-    font-size: 3em;;
-    padding: 25% 0 0;
+    font-size: 3.5em;;
+    padding: 22% 0 0;
 }
 h2 {
-    padding-bottom: 8%;
+    font-size:2em;
+    padding-bottom: 6%;
 }
 h3 {
     padding: 4% 0 3%;
@@ -204,16 +228,21 @@ a .fab {
     margin: 0 15px;
     font-size: 250%;
 }
-
-.projects-section .project-text hr {
-    border-color: rgba(9, 22, 39, 0.897);
-    border-width: .25rem;
-    width: 30%;
-}
 .perfil {
     max-width: 100%;
     height: auto;
     margin: 0 0 10% 20%;
 }
-
+.navbar{
+    transition: 350ms ease;
+    background: transparent !important;
+    color: #ffffff;
+    padding: 10px;
 }
+.navbar.scrolled{
+    background: rgba(5, 16, 27, 0.952) !important;
+    color: #ffffff;
+    z-index: 1030;
+}
+}
+

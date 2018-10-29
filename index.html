@@ -7,21 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" href="img/logo-letra-neg.png" />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="src/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
+  <!--Librería CSS animate.css-->
+  <link rel="stylesheet" href="animate/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <title>Danelly Sotomayor-Portafolio</title>
 </head>
 
 <body>
+
   <!--Navbar section-->
   <div class="nav">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="#section-page-top">
           <img class="logo-danelly" src="img/logo-letra-org.png">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -31,19 +33,22 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Proyectos</a>
+              <a data-scroll class="nav-link js-scroll-trigger active" href="#section-page-top">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a>
+              <a data-scroll class="nav-link js-scroll-trigger" href="#section-projects">PROYECTOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+              <a data-scroll class="nav-link js-scroll-trigger" href="#section-about">SOBRE MÍ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+              <a data-scroll class="nav-link js-scroll-trigger" href="#section-skills">HABILIDADES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" target="_blank" href="cv/DanellySotomayorM-CV.pdf">Mi CV</a>
+              <a data-scroll class="nav-link js-scroll-trigger" href="#section-contact">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" target="_blank" href="cv/DanellySotomayorM-CV.pdf">MI CV</a>
             </li>
           </ul>
         </div>
@@ -51,20 +56,15 @@
     </nav>
   </div>
   <!--Intro section-->
-  <div class="background" id="page-top">
+  <div class="background" id="section-page-top">
     <!-- Presentation -->
     <header>
       <div class="container d-flex align-items-center">
         <div class="row presentation">
           <div class="mx-auto text-center">
-            <h1 class="mx-auto my-0">¡HOLA!</h1>
+            <h1 class="animated fadeInUp mx-auto my-0">¡HOLA!</h1>
             <h2 class="text-white-50 mx-auto mt-2">SOY DANELLY SOTOMAYOR, UX/UI DESIGNER Y COMUNICADORA SOCIAL</h2>
             <a href="#projects" class="btn btn-light js-scroll-trigger">Mira mis proyectos</a>
-            <div class="lenguaje">
-              <a href="src/index-english.html">
-                <button>English</button>
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@
     </div>
   </div>
   <!--Projects section-->
-  <section id="projects" class="projects-section bg-light">
+  <section id="section-projects" class="projects-section bg-light">
     <div class="container">
       <h3 class="text-center text-black">PROYECTOS</h3>
       <hr class="d-none d-lg-block mb-0 ml-0">
@@ -104,13 +104,13 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">Diseño de aplicación web y móvil - La América H&C</h4>
-                <p class="mb-0 text-white-50">Tras un proceso de research y prototipado, logramos crear una plataforma de e-commerce para el restaurante La América H&C que le permite a sus usuarios pedir un delivery online o reservar para pasar a recogerlo.</p><br>
+                <p class="mb-0 text-white-50">Tras un proceso de research, logramos prototipar una plataforma
+                  de e-commerce para el restaurante La América H&C que permite realizar pedidos online.</p><br>
                 <a href="https://github.com/DanellySotomayor/lim-2018-01-ux-marketplace" target="_blank" class="btn btn-info js-scroll-trigger">Ver
                   proyecto</a>
                 <a href="https://xd.adobe.com/view/088dd361-b02e-44b2-7c63-74d7caaca4de-7ebc/?fullscreen" target="_blank"
                   class="btn btn-info js-scroll-trigger">Ver
                   demo</a>
-                <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
           </div>
@@ -127,13 +127,14 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">Diseño de registro diarios de visitantes</h4>
-                <p class="mb-0 text-white-50">Creamos el prototipo de una aplicación para web y tablet que permite a los visitantes registrarse de manera sencilla, y a los administradores llevar un registro más detallado de las visitas diarias.</p><br>
+                <p class="mb-0 text-white-50">Prototipamos una aplicación para web y tablet que permite a
+                  los visitantes registrarse fácilmente, y a los administradores llevar un registro detallado de las
+                  visitas diarias.</p><br>
                 <a href="https://github.com/DanellySotomayor/proyecto-final-common-core" target="_blank" class="btn btn-info js-scroll-trigger">Ver
                   proyecto</a>
                 <a href="https://www.figma.com/proto/SNAieaWmj6UB2t6pnGnbbZV2/Register---Comunal?node-id=0%3A1&scaling=scale-down"
                   target="_blank" class="btn btn-info js-scroll-trigger">Ver
                   demo</a>
-                <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
           </div>
@@ -150,13 +151,13 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">Desarrollo de aplicación - Where's my food?</h4>
-                <p class="mb-0 text-white-50">Diseñé y desarrollé una aplicación que permite buscar restaurantes según la
+                <p class="mb-0 text-white-50">Diseñé y desarrollé una aplicación que permite buscar restaurantes según
+                  la
                   ubicación del usuario.</p><br>
                 <a href="https://github.com/DanellySotomayor/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Ver
                   proyecto</a>
                 <a href="https://danellysotomayor.github.io/lim-2018-01-foodmap" target="_blank" class="btn btn-info js-scroll-trigger">Ver
                   demo</a>
-                <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
           </div>
@@ -173,14 +174,14 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">Desarrollo de plataforma - U+US, Red Social Feminista</h4>
-                <p class="mb-0 text-white-50">Prototipamos y desarrollamos una red social especialmente dedicada a la comunidad feminista que busca
+                <p class="mb-0 text-white-50">Prototipamos y desarrollamos una red social especialmente dedicada a la
+                  comunidad feminista que busca
                   crear un espacio para compartir info, y brindar y solicitar apoyo.</p><br>
                 <a href="https://github.com/DanellySotomayor/lim-2018-05-bc-core-am-socialnetwork" target="_blank"
                   class="btn btn-info js-scroll-trigger">Ver proyecto</a>
                 <a href="https://www.figma.com/proto/aWvJnjBOhigbjfvxZ9yF8ifb/Social-Network---Mobile?node-id=1%3A3&scaling=scale-down"
                   target="_blank" class="btn btn-info js-scroll-trigger">Ver
                   demo</a>
-                <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
           </div>
@@ -190,16 +191,16 @@
     </div>
   </section>
   <!--About Me section-->
-  <section id="about" class="about-section text-center">
+  <section id="section-about" class="about-section text-center">
     <div class="container-fluid about-me">
       <div class="center">
         <h3 class="text-center">SOBRE MÍ</h3>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-md-4 col-md-push-1">
+        <div class="col-xs-12 col-md-5 col-md-push-1">
           <img class="img-fluid perfil" src="img/foto-perfil.JPG" alt="">
         </div>
-        <div class="col-xs-12 col-md-6 col-md-push-1 mx-auto">
+        <div class="col-xs-12 col-md-5 col-md-push-1 mx-auto">
           <p class="text-white-50">Soy UX Designer con background en Comunicaciones y Diseño
             Gráfico. Me apasiona la investigación y el diseño, y no tengo miedo de probar nuevas herramientas y
             aprender constantemente en el desarrollo de mis proyectos.</p>
@@ -208,11 +209,19 @@
           <p class="text-white-50">Disfruto de series y películas y me gusta pasar tiempo con mi familia. Soy yogui
             beginner, cupcaker, petlover y me encantan los tatuajes.</p>
         </div>
+        <div class="col-md-12 mb-5 mb-Lg-0">
+          <div class="soft">
+            <span>Habilidad 1</span>
+            <span>Habilidad 2</span>
+            <span>Habilidad 3</span>
+            <span>Habilidad 4</span>
+            <span>Habilidad 5</span>
+          </div>
       </div>
     </div>
   </section>
   <!--Skills section-->
-  <section id="skills" class="skills-section text-center">
+  <section id="section-skills" class="skills-section text-center">
     <div class="container-fluid about-me">
       <div class="center">
         <h3 class="text-center">HABILIDADES</h3>
@@ -248,7 +257,7 @@
     </div>
   </section>
   <!--Contact section-->
-  <section id="contact" class="contact-section text-center">
+  <section id="section-contact" class="contact-section text-center">
     <div class="container-fluid contact">
       <div class="center">
         <h3 class="text-center">CONTÁCTAME</h3>
@@ -285,12 +294,13 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="src/app.js"></script>
 </body>
 
