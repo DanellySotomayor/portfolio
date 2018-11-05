@@ -7,6 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+<<<<<<< HEAD
 
 const TypeWriter = function(txtElement, words, wait = 3000) {
   this.txtElement = txtElement;
@@ -33,6 +34,8 @@ TypeWriter.prototype.type = function() {
   this.txtElement.innerHTML = `<span class="text">${this.txt}</span>`;
 // speed
   let typeSpeed = 100;
+=======
+>>>>>>> e589fa5b003426bc871651001798c24815ff23cf
 
   if (this.isDeleting) {
     typeSpeed /= 2;
@@ -67,12 +70,20 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function(){
+<<<<<<< HEAD
     $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 100);
+=======
+    $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 200);
+>>>>>>> e589fa5b003426bc871651001798c24815ff23cf
   });
 
   $('body').scrollspy({
 		target: '#mainNav',
+<<<<<<< HEAD
 		offset: 1200,
+=======
+		offset: 0,
+>>>>>>> e589fa5b003426bc871651001798c24815ff23cf
     });
 
 });
