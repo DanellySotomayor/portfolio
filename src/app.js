@@ -77,3 +77,12 @@ $(document).ready(function () {
 
 });
 
+//Jquery Aniview functions
+$(document).ready(function(){
+  $('.aniview').AniView();
+});
+var options = {
+  animateThreshold: 100,
+  scrollPollInterval: 50
+}
+$('.aniview').AniView(options);
