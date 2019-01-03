@@ -80,9 +80,15 @@ $(document).ready(function () {
 //Jquery Aniview functions
 $(document).ready(function(){
   $('.aniview').AniView();
+  loaderPage();
 });
 var options = {
   animateThreshold: 100,
   scrollPollInterval: 50
 }
 $('.aniview').AniView(options);
+
+//preloader
+var loaderPage = function() {
+  $(".probootstrap-loader").fadeOut("slow");
+};
