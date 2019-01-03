@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a .logo-danelly {
+    width: 35px;
+}
+ 
+.navbar{
+    background: hsl(210, 69%, 6%) !important;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+}
+
+
+h1 {
+    padding: 40% 0 0;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 0.5px dotted #5d5e5f;
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+li {
+    font-size: 1em;
+}
+
+td {
+    padding-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 0 3px;
+}
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 0.10rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #594a5f;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+	color: #ffffff;
+    background: #7e2761cc;
+    transition: 280ms ease;
+}
+.navbar-light .navbar-nav .nav-link.active{
+
+    border-radius: 0.10rem;
+    color: #ffffff;
+}
+
+a .fab {
+    color: #ffffff; 
+    margin: 0 15px;
+    font-size: 200%;
+}
+
+a .fas {
+    color: #ffffff; 
+    margin: 0 15px;
+    font-size: 150%;
+}
+
+.txt-type > .text {
+    border-right: 0.2rem solid #777;
+}
+
+.links-contact {
+    padding: 9% 0 12% 0;
+}
+
+.btn{
+    margin: 2% 0 5% 0;
+    background-color: rgb(97, 0, 121);
+    border-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.btn:hover{
+    background-color: #7e2761cc;
+    border-color: rgb(7, 7, 7);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+
+.social-icons {
+    text-decoration-color: transparent;
+}
+
+
+
+.footer-home {
+    background: linear-gradient(
+        rgba(11, 11, 12, 0.712), 
+        rgba(11, 11, 12, 0.712)
+      ), url("../img/unsplash2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    color: #ffffff;
+    padding: 1.5% 0 0.5% 0;
+    font-size: 13px;
+}
+
+.contact {
+    background: rgb(2, 9, 19);
+    background-size: cover;
+    width: 100%;
+    color: #ffffff;
+}
+
+
+
+.email {
+    color: #ffffff;
+}
+
+@media (min-width: 765px) {
+.language {
+    padding: 8% 0 0 0;
+    color: #ffffff;
+}
+h1 {
+    font-size: 3.5em;;
+    padding: 22% 0 0;
+}
+h2 {
+    font-size: 1.5em;
+    border-bottom: 0.5px dotted #5d5e5f;
+}
+
+h3 {
+    padding: 4% 0 3%;
+}
+a .fab {
+    color: #ffffff; 
+    margin: 0 15px;
+    font-size: 250%;
+}
+
+.navbar{
+    transition: 350ms ease;
+    background: #05101b !important;
+    color: #ffffff;
+    padding: 10px;
+}
+.navbar.scrolled{
+    background: rgba(5, 16, 27, 0.952) !important;
+    color: #ffffff;
+    z-index: 1030;
+}
+}
+
